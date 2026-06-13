@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.parking.controller.LoginController"
+            stylesheets="@../css/main.css"
+            prefWidth="1280" prefHeight="720">
+
+    <center>
+        <VBox alignment="CENTER" spacing="16" maxWidth="420">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <Label text="Parking Moto" styleClass="title"/>
+            <Label text="Connexion gérant" styleClass="subtitle"/>
+
+            <VBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Identifiant"/>
+                <TextField fx:id="loginField" promptText="admin" prefWidth="360"/>
+            </VBox>
+
+            <VBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Mot de passe"/>
+                <PasswordField fx:id="passwordField" promptText="••••••••" prefWidth="360"/>
+            </VBox>
+
+            <HBox spacing="12" alignment="CENTER">
+                <Button fx:id="loginButton" text="Se connecter" styleClass="btn-primary" defaultButton="true"/>
+            </HBox>
+
+            <Label fx:id="statusLabel" styleClass="status-info" wrapText="true" maxWidth="360"/>
+        </VBox>
+    </center>
+</BorderPane>

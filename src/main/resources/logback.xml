@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Répertoire où seront stockés les fichiers de logs -->
+    <property name="LOG_DIR" value="./logs"/>
+
+    <!-- Nom de l'application utilisé dans les noms des fichiers de logs -->
+    <property name="APP_NAME" value="parking-moto"/>
+
+    <!-- ========================================================= -->
+    <!-- Appender Console : affichage des logs dans le terminal    -->
+    <!-- Utilisé principalement en phase de développement          -->
+    <!-- ========================================================= -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--
+                Format :
+                - Heure avec millisecondes
+                - Nom du thread
+                - Niveau du log (INFO, DEBUG, WARN, ERROR...)
+                - Logger concerné
+                - Message
+            -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+
+            <!-- Encodage UTF-8 pour supporter les caractères accentués -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- ========================================================= -->
+    <!-- Appender Fichier : écriture des logs sur disque           -->
+    <!-- Rotation quotidienne et conservation sur 30 jours         -->
+    <!-- ========================================================= -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- Fichier de log actif -->
+        <file>${LOG_DIR}/${APP_NAME}.log</file>
+
+        <!-- Politique de rotation basée sur la date -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+            <!--
+                Un nouveau fichier est créé chaque jour :
+                parking-moto.2025-01-01.log
+                parking-moto.2025-01-02.log
+                etc.
+            -->
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+            <!-- Nombre de jours de conservation des archives -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <!--
+                Format plus détaillé pour les fichiers :
+                - Date complète
+                - Heure avec millisecondes
+                - Thread
+                - Niveau
+                - Logger (50 caractères max)
+                - Message
+            -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+
+            <!-- Encodage UTF-8 -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- ========================================================= -->
+    <!-- Configuration spécifique à l'application                  -->
+    <!-- ========================================================= -->
+
+    <!--
+        Tous les logs du package com.parking seront affichés
+        à partir du niveau DEBUG.
+
+        additivity="false" évite que les logs soient propagés
+        au logger racine (root), ce qui empêcherait les doublons.
+    -->
+    <logger name="com.parking" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <!-- Réduction du bruit des logs provenant du driver MySQL -->
+    <logger name="com.mysql" level="WARN"/>
+
+    <!-- Réduction du bruit des logs provenant de la bibliothèque BCrypt -->
+    <logger name="org.mindrot" level="WARN"/>
+
+    <!-- ========================================================= -->
+    <!-- Logger racine (root)                                      -->
+    <!-- ========================================================= -->
+
+    <!--
+        Tous les packages non explicitement configurés
+        utiliseront le niveau INFO.
+
+        Les logs seront envoyés à la console et au fichier.
+    -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

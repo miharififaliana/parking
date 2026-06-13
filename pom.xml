@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ================================================================
+       Coordonnées du projet
+       ================================================================ -->
+  <groupId>com.parking</groupId>
+  <artifactId>parking-moto</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>Système Intelligent de Gestion de Parking Moto</name>
+  <description>Application desktop JavaFX de gestion de parking moto — Version 1.0</description>
+
+  <!-- ================================================================
+       Propriétés globales
+       ================================================================ -->
+  <properties>
+    <!-- Java LTS 17 imposé par le cahier des charges -->
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- Versions des dépendances — centralisées ici pour faciliter les mises à jour -->
+    <javafx.version>21.0.2</javafx.version>
+    <mysql.version>8.3.0</mysql.version>
+    <jbcrypt.version>0.4</jbcrypt.version>
+    <zxing.version>3.5.3</zxing.version>
+    <junit.version>5.10.2</junit.version>
+    <mockito.version>5.10.0</mockito.version>
+    <slf4j.version>2.0.12</slf4j.version>
+    <logback.version>1.5.3</logback.version>
+  </properties>
+
+  <!-- ================================================================
+       Dépendances
+       ================================================================ -->
+  <dependencies>
+
+    <!-- ── JavaFX 21 ─────────────────────────────────────────────── -->
+    <!-- Interface graphique native Java, supporte CSS, animations -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-graphics</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+    <!-- ── MySQL 8 Connector/J ───────────────────────────────────── -->
+    <!-- Driver JDBC officiel MySQL — transactions ACID InnoDB -->
+    <dependency>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>${mysql.version}</version>
+    </dependency>
+
+    <!-- ── jBCrypt 0.4 ───────────────────────────────────────────── -->
+    <!-- Hachage BCrypt facteur 12 pour les mots de passe (§5.4 CDC) -->
+    <dependency>
+      <groupId>org.mindrot</groupId>
+      <artifactId>jbcrypt</artifactId>
+      <version>${jbcrypt.version}</version>
+    </dependency>
+
+    <!-- ── ZXing (QR Code) ───────────────────────────────────────── -->
+    <!-- Génération du QR Code sur les tickets (§4.3 CDC) -->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>${zxing.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>javase</artifactId>
+      <version>${zxing.version}</version>
+    </dependency>
+
+    <!-- ── SLF4J + Logback ───────────────────────────────────────── -->
+    <!-- Logging structuré — aucun mot de passe dans les logs (§5.4) -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+
+    <!-- ── JUnit 5 (tests) ───────────────────────────────────────── -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- ── Mockito (mocks pour tests DAO/Service) ────────────────── -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>${mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>${mockito.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <!-- ================================================================
+       Build & Plugins
+       ================================================================ -->
+  <build>
+    <plugins>
+
+      <!-- ── Compilateur Maven ─────────────────────────────────── -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.12.1</version>
+        <configuration>
+          <release>17</release>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <!-- ── Plugin JavaFX ─────────────────────────────────────── -->
+      <!-- Permet : mvn javafx:run  pour lancer l'application -->
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.parking/com.parking.MainApp</mainClass>
+        </configuration>
+      </plugin>
+
+      <!-- ── JUnit 5 Surefire ──────────────────────────────────── -->
+      <!-- Active la découverte automatique des tests JUnit 5 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <useModulePath>false</useModulePath>
+        </configuration>
+      </plugin>
+
+      <!-- ── Assembly : JAR exécutable autonome ───────────────── -->
+      <!-- Produit un fat-JAR avec toutes les dépendances incluses -->
+      <!-- Usage : mvn package → target/parking-moto-1.0.0-jar-with-dependencies.jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.6.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <archive>
+                <manifest>
+                  <mainClass>com.parking.MainApp</mainClass>
+                </manifest>
+              </archive>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>

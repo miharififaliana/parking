@@ -1,0 +1,45 @@
+/* Charte graphique Phase 1 — sobre, contrastes forts (CDC §7) */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f6f8;
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a2e;
+}
+
+.subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4a5568;
+}
+
+.btn-primary {
+    -fx-background-color: #2d6a4f;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 32 12 32;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #40916c;
+}
+
+.status-info {
+    -fx-text-fill: #4a5568;
+    -fx-font-size: 13px;
+}
+
+.status-error {
+    -fx-text-fill: #c1121f;
+}
+
+.status-success {
+    -fx-text-fill: #2d6a4f;
+}

@@ -1,0 +1,12 @@
+2026-06-13 06:03:44.621 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-13 06:04:55.959 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-13 06:04:56.004 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-13 06:04:56.014 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-13 06:04:56.015 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: NOM_DE_VOTRE_PARKING, places: 50
+2026-06-13 06:05:00.369 [JavaFX Application Thread] WARN  com.parking.MainApp - MySQL indisponible — l'écran de connexion s'affiche quand même : Impossible de se connecter à MySQL. Vérifiez que le serveur est démarré sur localhost:3306 et que la base 'parking_moto' existe. Erreur SQL: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2026-06-13 06:05:01.455 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-13 06:05:14.549 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-13 06:05:14.550 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 0 connexion(s) à fermer
+2026-06-13 06:05:14.551 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-13 06:05:14.551 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-13 06:05:14.551 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
