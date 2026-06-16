@@ -137,7 +137,7 @@ INSERT IGNORE INTO utilisateurs (nom, login, mot_de_passe, role)
 VALUES (
     'Administrateur',
     'admin',
-    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj5oMnAVXmCy',
+    'Admin1234',
     'ADMIN'
 );
 

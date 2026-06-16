@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.EntreeController"
+      spacing="20">
+
+    <Label text="Enregistrement d'entrée" styleClass="page-title"/>
+
+    <Label fx:id="statusLabel" wrapText="true"/>
+
+    <VBox spacing="16" styleClass="card">
+        <padding>
+            <Insets top="20" right="24" bottom="20" left="24"/>
+        </padding>
+
+        <HBox spacing="16" alignment="CENTER_LEFT">
+            <Label text="Place proposée :" styleClass="card-title"/>
+            <Label fx:id="placeLabel" text="—" styleClass="stat-value"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button fx:id="rechercherButton" text="Rechercher une place"
+                    styleClass="btn-secondary" onAction="#onRechercherPlace"/>
+        </HBox>
+
+        <VBox spacing="8">
+            <Label text="Immatriculation *"/>
+            <TextField fx:id="immatField" promptText="Ex : 1234 TAA" prefWidth="320"/>
+        </VBox>
+
+        <HBox spacing="12">
+            <Button fx:id="validerButton" text="Valider l'entrée"
+                    styleClass="btn-primary" onAction="#onValider"/>
+        </HBox>
+    </VBox>
+</VBox>

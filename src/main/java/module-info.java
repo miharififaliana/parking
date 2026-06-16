@@ -23,4 +23,13 @@ module com.parking {
     exports com.parking.config;
     exports com.parking.controller;
     exports com.parking.exception;
+    exports com.parking.model;
+    exports com.parking.dao;
+    exports com.parking.service;
+    exports com.parking.util;
+    exports com.parking.debug;
+
+    requires java.desktop;
+    requires kernel;
+    requires layout;
 }

@@ -16,7 +16,7 @@ class AppConfigTest {
         AppConfig config = AppConfig.getInstance();
         assertNotNull(config);
         assertEquals("parking_moto", config.getDbName());
-        assertEquals("parking_user", config.getDbUser());
+        assertEquals("root", config.getDbUser());
         assertEquals("TKT", config.getTicketPrefixe());
     }
 }

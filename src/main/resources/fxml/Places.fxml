@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.PlacesController"
+      spacing="20">
+
+    <HBox alignment="CENTER_LEFT" spacing="16">
+        <Label text="Gestion des places" styleClass="page-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Actualiser" styleClass="btn-secondary" onAction="#onRefresh"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" wrapText="true"/>
+
+    <HBox spacing="24">
+        <VBox spacing="4" styleClass="stat-box">
+            <Label text="Total" styleClass="stat-label"/>
+            <Label fx:id="totalLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="stat-box stat-libre">
+            <Label text="Libres" styleClass="stat-label"/>
+            <Label fx:id="libresLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="stat-box stat-occupee">
+            <Label text="Occupées" styleClass="stat-label"/>
+            <Label fx:id="occupeesLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+    </HBox>
+
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS" styleClass="card">
+        <FlowPane fx:id="placesGrid" hgap="8" vgap="8">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+        </FlowPane>
+    </ScrollPane>
+</VBox>

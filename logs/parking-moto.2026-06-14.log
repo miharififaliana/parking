@@ -1,0 +1,339 @@
+2026-06-14 13:23:12.989 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:23:13.012 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:23:13.017 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:23:13.017 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:23:13.164 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:23:13.170 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:23:13.403 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:23:13.624 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:23:57.222 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:23:57.230 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:23:57.235 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:23:57.235 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:23:57.523 [JavaFX Application Thread] WARN  com.parking.service.AuthService - Échec de connexion pour le login : admin
+2026-06-14 13:25:41.933 [JavaFX Application Thread] WARN  com.parking.service.AuthService - Échec de connexion pour le login : admin
+2026-06-14 13:29:47.577 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:29:47.593 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:29:47.597 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:29:47.597 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:29:47.728 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:29:47.733 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:29:47.937 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:29:48.121 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:30:03.248 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:30:03.254 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:30:03.258 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:30:03.259 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:30:03.517 [JavaFX Application Thread] WARN  com.parking.service.AuthService - Échec de connexion pour le login : admin
+2026-06-14 13:30:49.339 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:30:49.340 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:30:49.341 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:30:49.342 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:30:49.342 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:30:51.111 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:30:51.112 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:30:51.114 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:30:51.115 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:30:51.115 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:34:48.997 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:34:49.014 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:34:49.018 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:34:49.018 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:34:49.155 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:34:49.160 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:34:49.373 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:34:49.561 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:34:57.611 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:34:57.616 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:34:57.620 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:34:57.621 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:34:57.883 [JavaFX Application Thread] WARN  com.parking.service.AuthService - Échec de connexion pour le login : admin
+2026-06-14 13:35:07.815 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Nouvelle connexion créée — total: 3
+2026-06-14 13:35:08.035 [JavaFX Application Thread] WARN  com.parking.service.AuthService - Échec de connexion pour le login : admin
+2026-06-14 13:42:16.697 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:42:16.717 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:42:16.720 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:42:16.721 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:42:16.861 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:42:16.867 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:42:17.088 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:42:17.287 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:42:29.826 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:42:29.831 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:42:29.836 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:42:29.836 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:42:45.665 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:42:45.666 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:42:45.668 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:42:45.668 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:42:45.668 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:42:47.036 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:42:47.037 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 3 connexion(s) à fermer
+2026-06-14 13:42:47.039 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:42:47.039 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:42:47.041 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:43:25.444 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:43:25.461 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:43:25.465 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:43:25.465 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:43:25.596 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:43:25.602 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:43:25.812 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:43:26.013 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:43:33.106 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:43:33.111 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:43:33.116 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:43:33.116 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:44:23.769 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:44:23.769 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:44:23.770 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:44:23.771 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:44:23.771 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:44:33.687 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:44:33.709 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:44:33.713 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:44:33.714 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:44:33.956 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:44:33.963 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:44:34.194 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:44:34.408 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:44:41.721 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:44:41.727 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:44:41.733 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:44:41.733 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:49:58.554 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:49:58.573 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:49:58.577 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:49:58.577 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:49:58.704 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:49:58.709 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:49:58.913 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:49:59.100 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:50:07.121 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:50:07.127 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:50:07.133 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:50:07.134 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:50:55.143 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:50:55.144 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:50:55.146 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:50:55.146 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:50:55.146 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:50:56.621 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:50:56.622 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 13:50:56.623 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:50:56.624 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:50:56.624 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:51:05.976 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:51:05.994 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:51:05.999 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:51:05.999 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:51:06.138 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:51:06.146 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:51:06.381 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:51:06.590 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:51:13.610 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:51:13.616 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:51:13.620 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:51:13.620 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:53:14.971 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Nouvelle connexion créée — total: 3
+2026-06-14 13:53:14.976 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Nouvelle connexion créée — total: 4
+2026-06-14 13:53:48.394 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Nouvelle connexion créée — total: 5
+2026-06-14 13:53:48.399 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Nouvelle connexion créée — total: 6
+2026-06-14 13:53:52.690 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 13:53:52.691 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 6 connexion(s) à fermer
+2026-06-14 13:53:52.695 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 13:53:52.695 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 13:53:52.695 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 13:54:05.899 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 13:54:05.917 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 13:54:05.921 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:54:05.921 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 13:54:06.066 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 13:54:06.073 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 13:54:06.309 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 13:54:06.514 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 13:54:13.769 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:54:13.774 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:54:13.780 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:54:13.781 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 13:54:13.812 [JavaFX Application Thread] ERROR com.parking.controller.LoginController - Erreur inattendue lors de la connexion : Invalid salt version
+java.lang.IllegalArgumentException: Invalid salt version
+	at jbcrypt@0.4/org.mindrot.jbcrypt.BCrypt.hashpw(BCrypt.java:659)
+	at jbcrypt@0.4/org.mindrot.jbcrypt.BCrypt.checkpw(BCrypt.java:764)
+	at com.parking@1.0.0/com.parking.dao.UtilisateurDao.verifyPassword(UtilisateurDao.java:66)
+	at com.parking@1.0.0/com.parking.dao.UtilisateurDao.lambda$authenticate$0(UtilisateurDao.java:77)
+	at java.base/java.util.Optional.filter(Optional.java:222)
+	at com.parking@1.0.0/com.parking.dao.UtilisateurDao.authenticate(UtilisateurDao.java:77)
+	at com.parking@1.0.0/com.parking.service.AuthService.login(AuthService.java:53)
+	at com.parking@1.0.0/com.parking.controller.LoginController.onLoginClicked(LoginController.java:69)
+	at com.parking@1.0.0/com.parking.controller.LoginController.lambda$initialize$0(LoginController.java:40)
+	at javafx.base@21.0.2/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21.0.2/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21.0.2/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.2/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.2/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21.0.2/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21.0.2/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21.0.2/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21.0.2/javafx.scene.control.skin.ButtonSkin.lambda$new$0(ButtonSkin.java:71)
+	at javafx.graphics@21.0.2/com.sun.javafx.scene.KeyboardShortcutsHandler.processAccelerators(KeyboardShortcutsHandler.java:383)
+	at javafx.graphics@21.0.2/com.sun.javafx.scene.KeyboardShortcutsHandler.dispatchBubblingEvent(KeyboardShortcutsHandler.java:163)
+	at javafx.base@21.0.2/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21.0.2/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.2/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21.0.2/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21.0.2/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21.0.2/javafx.scene.Scene.processKeyEvent(Scene.java:2194)
+	at javafx.graphics@21.0.2/javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2715)
+	at javafx.graphics@21.0.2/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:218)
+	at javafx.graphics@21.0.2/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:150)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:138)
+	at javafx.graphics@21.0.2/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$1(GlassViewEventHandler.java:250)
+	at javafx.graphics@21.0.2/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21.0.2/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:249)
+	at javafx.graphics@21.0.2/com.sun.glass.ui.View.handleKeyEvent(View.java:542)
+	at javafx.graphics@21.0.2/com.sun.glass.ui.View.notifyKey(View.java:966)
+	at javafx.graphics@21.0.2/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21.0.2/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+2026-06-14 13:59:54.374 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 13:59:54.376 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 13:59:54.686 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 13:59:54.692 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 13:59:54.693 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:00:18.899 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:00:18.901 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:00:19.133 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:00:19.140 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:00:19.140 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:01:00.872 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:01:00.873 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:01:01.040 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:01:01.044 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:01:01.045 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:06:37.186 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:06:37.188 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:06:37.396 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:06:37.405 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:06:37.405 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:07:10.539 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:07:10.541 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:07:10.716 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:07:10.721 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:07:10.721 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:08:15.963 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:08:15.964 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:08:16.141 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:08:16.146 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:08:16.147 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:11:44.700 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:11:44.702 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:11:44.845 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:11:44.849 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:11:44.849 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:14:38.288 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:14:38.290 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:14:38.477 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:14:38.484 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:14:38.484 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:15:10.651 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:15:10.653 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:15:11.005 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:15:11.009 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:15:11.010 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:15:14.844 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:15:14.845 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:15:15.018 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:15:15.022 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:15:15.023 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:19:05.300 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:19:05.303 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:19:05.539 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:19:05.545 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:19:05.546 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:19:22.564 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:19:22.566 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:19:22.808 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:19:22.815 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:19:22.816 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:19:32.223 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:19:32.225 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:19:32.442 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:19:32.449 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:19:32.450 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:23:58.755 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:23:58.757 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:23:59.111 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:23:59.117 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:23:59.117 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 14:24:03.324 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 14:24:03.326 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 14:24:03.565 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 14:24:03.573 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 14:24:03.573 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 18:37:06.763 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 18:37:06.765 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 18:37:20.570 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 18:37:20.572 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 18:40:07.936 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 18:40:07.937 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 18:40:08.147 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 18:40:08.155 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 18:40:08.156 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 18:46:44.028 [main] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 18:46:44.030 [main] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 18:46:44.266 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 18:46:44.273 [main] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 18:46:44.273 [main] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 18:47:44.327 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 18:47:44.334 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 18:47:44.371 [JavaFX Application Thread] WARN  com.parking.config.DatabaseConfig - Erreur lors de la fermeture d'une connexion : Communications link failure during rollback(). Transaction resolution unknown.
+2026-06-14 18:47:44.372 [JavaFX Application Thread] WARN  com.parking.config.DatabaseConfig - Erreur lors de la fermeture d'une connexion : Communications link failure during rollback(). Transaction resolution unknown.
+2026-06-14 18:47:44.372 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 18:47:44.373 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 18:47:44.373 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===
+2026-06-14 18:47:48.921 [main] DEBUG com.parking.MainApp - Lancement via main() — transmission à JavaFX Application.launch()
+2026-06-14 18:47:48.946 [JavaFX Application Thread] INFO  com.parking.MainApp - === Démarrage de l'application Parking Moto v1.0.0 ===
+2026-06-14 18:47:48.951 [JavaFX Application Thread] INFO  com.parking.config.AppConfig - Configuration chargée depuis le classpath (mode développement)
+2026-06-14 18:47:48.952 [JavaFX Application Thread] INFO  com.parking.MainApp - Configuration chargée — parking: Parking Moto, places: 50
+2026-06-14 18:47:49.134 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Test de connexion MySQL réussi — URL: jdbc:mysql://localhost:3306/parking_moto?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&useSSL=false
+2026-06-14 18:47:49.141 [JavaFX Application Thread] INFO  com.parking.MainApp - Connexion MySQL vérifiée avec succès
+2026-06-14 18:47:49.438 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 18:47:49.744 [JavaFX Application Thread] INFO  com.parking.MainApp - Interface graphique initialisée — 1280.0x720.0
+2026-06-14 18:47:55.861 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Initialisation du pool JDBC — min: 2, max: 10
+2026-06-14 18:47:55.869 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #1 créée dans le pool
+2026-06-14 18:47:55.876 [JavaFX Application Thread] DEBUG com.parking.config.DatabaseConfig - Connexion #2 créée dans le pool
+2026-06-14 18:47:55.877 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC initialisé avec 2 connexion(s)
+2026-06-14 18:47:56.040 [JavaFX Application Thread] INFO  com.parking.service.AuthService - Utilisateur connecté : admin (ADMIN)
+2026-06-14 18:47:56.042 [JavaFX Application Thread] INFO  com.parking.controller.LoginController - Redirection vers l'écran principal — utilisateur admin
+2026-06-14 18:47:56.142 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:47:56.156 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran principal affiché
+2026-06-14 18:48:17.775 [JavaFX Application Thread] INFO  com.parking.service.TicketService - Entrée enregistrée — TKT-2026-0001 place n°1
+2026-06-14 18:48:17.786 [JavaFX Application Thread] DEBUG com.parking.util.ImpressionEscPos - Impression désactivée — ticket TKT-2026-0001 affiché à l'écran uniquement
+2026-06-14 18:48:23.090 [JavaFX Application Thread] DEBUG com.parking.util.ImpressionEscPos - Impression désactivée — ticket TKT-2026-0001 affiché à l'écran uniquement
+2026-06-14 18:48:28.871 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:48:41.134 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:49:12.342 [JavaFX Application Thread] INFO  com.parking.service.TicketService - Sortie enregistrée — TKT-2026-0001 montant 1.00 €
+2026-06-14 18:49:16.436 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:49:37.741 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:49:43.953 [JavaFX Application Thread] INFO  com.parking.service.TicketService - Entrée enregistrée — TKT-2026-0002 place n°1
+2026-06-14 18:49:43.961 [JavaFX Application Thread] DEBUG com.parking.util.ImpressionEscPos - Impression désactivée — ticket TKT-2026-0002 affiché à l'écran uniquement
+2026-06-14 18:49:46.702 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:51:23.569 [JavaFX Application Thread] DEBUG com.parking.controller.DashboardController - Polling tableau de bord démarré — intervalle 5000 ms
+2026-06-14 18:52:51.218 [JavaFX Application Thread] INFO  com.parking.service.AuthService - Utilisateur déconnecté : admin
+2026-06-14 18:52:51.233 [JavaFX Application Thread] DEBUG com.parking.controller.SceneNavigator - Écran de connexion affiché
+2026-06-14 18:53:01.972 [JavaFX Application Thread] INFO  com.parking.MainApp - Arrêt de l'application — fermeture des ressources...
+2026-06-14 18:53:01.975 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Fermeture du pool — 2 connexion(s) à fermer
+2026-06-14 18:53:01.978 [JavaFX Application Thread] INFO  com.parking.config.DatabaseConfig - Pool JDBC fermé
+2026-06-14 18:53:01.979 [JavaFX Application Thread] INFO  com.parking.MainApp - Pool de connexions JDBC fermé proprement
+2026-06-14 18:53:01.979 [JavaFX Application Thread] INFO  com.parking.MainApp - === Application Parking Moto arrêtée ===

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.StatistiquesController"
+      spacing="20">
+
+    <HBox alignment="CENTER_LEFT" spacing="16">
+        <Label text="Statistiques" styleClass="page-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Exporter PDF" styleClass="btn-secondary" onAction="#onExportPdf"/>
+        <Button text="Actualiser" styleClass="btn-secondary" onAction="#onRefresh"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" wrapText="true"/>
+
+    <HBox spacing="16">
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Entrées aujourd'hui" styleClass="stat-label"/>
+            <Label fx:id="entreesJourLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Cette semaine" styleClass="stat-label"/>
+            <Label fx:id="entreesSemaineLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Ce mois" styleClass="stat-label"/>
+            <Label fx:id="entreesMoisLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Cette année" styleClass="stat-label"/>
+            <Label fx:id="entreesAnneeLabel" text="0" styleClass="stat-value"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="16">
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Durée moyenne" styleClass="stat-label"/>
+            <Label fx:id="dureeMoyenneLabel" text="—" styleClass="stat-value"/>
+        </VBox>
+        <VBox spacing="4" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Recettes cumulées (année)" styleClass="stat-label"/>
+            <Label fx:id="recetteTotaleLabel" text="0,00 €" styleClass="stat-value-large"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="16" VBox.vgrow="ALWAYS">
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Évolution des recettes (30 jours)" styleClass="card-title"/>
+            <LineChart fx:id="recettesChart" prefHeight="260" animated="false">
+                <xAxis><CategoryAxis label="Jour"/></xAxis>
+                <yAxis><NumberAxis label="€"/></yAxis>
+            </LineChart>
+        </VBox>
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="Heures de pointe (mois)" styleClass="card-title"/>
+            <BarChart fx:id="heuresChart" prefHeight="260" animated="false">
+                <xAxis><CategoryAxis label="Heure"/></xAxis>
+                <yAxis><NumberAxis label="Entrées"/></yAxis>
+            </BarChart>
+        </VBox>
+    </HBox>
+</VBox>

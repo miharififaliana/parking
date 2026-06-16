@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.parking.controller.MainController"
+            prefWidth="1280" prefHeight="720">
+
+    <left>
+        <VBox styleClass="sidebar" prefWidth="240" spacing="8">
+            <padding>
+                <Insets top="24" right="16" bottom="24" left="16"/>
+            </padding>
+
+            <Label fx:id="parkingLabel" text="Parking Moto" styleClass="sidebar-title" wrapText="true"/>
+            <Label fx:id="userLabel" text="Utilisateur" styleClass="sidebar-user" wrapText="true"/>
+
+            <Separator/>
+
+            <Label text="Navigation" styleClass="sidebar-section"/>
+
+            <Button fx:id="dashboardNavButton" text="Tableau de bord"
+                    styleClass="nav-button" maxWidth="Infinity" onAction="#showDashboard"/>
+            <Button fx:id="entreeNavButton" text="Entrée véhicule"
+                    styleClass="nav-button" maxWidth="Infinity" onAction="#onNavEntree"/>
+            <Button fx:id="sortieNavButton" text="Sortie véhicule"
+                    styleClass="nav-button" maxWidth="Infinity" onAction="#onNavSortie"/>
+            <Button fx:id="placesNavButton" text="Places"
+                    styleClass="nav-button" maxWidth="Infinity" onAction="#onNavPlaces"/>
+            <Button fx:id="statsNavButton" text="Statistiques"
+                    styleClass="nav-button" maxWidth="Infinity" onAction="#onNavStatistiques"/>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+            <Button fx:id="logoutButton" text="Déconnexion"
+                    styleClass="btn-secondary" maxWidth="Infinity"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area">
+            <padding>
+                <Insets top="16" right="24" bottom="16" left="24"/>
+            </padding>
+        </StackPane>
+    </center>
+</BorderPane>

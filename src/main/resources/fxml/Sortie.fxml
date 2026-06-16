@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.SortieController"
+      spacing="20">
+
+    <Label text="Enregistrement de sortie" styleClass="page-title"/>
+    <Label fx:id="statusLabel" wrapText="true"/>
+
+    <HBox spacing="16" styleClass="card">
+        <padding>
+            <Insets top="20" right="24" bottom="20" left="24"/>
+        </padding>
+
+        <VBox spacing="8" HBox.hgrow="ALWAYS">
+            <Label text="N° ticket"/>
+            <TextField fx:id="ticketField" promptText="TKT-2026-0001"/>
+        </VBox>
+
+        <VBox spacing="8" HBox.hgrow="ALWAYS">
+            <Label text="N° place"/>
+            <TextField fx:id="placeField" promptText="12"/>
+        </VBox>
+
+        <VBox spacing="8" alignment="BOTTOM_CENTER">
+            <Button text="Rechercher" styleClass="btn-secondary" onAction="#onRechercher"/>
+        </VBox>
+    </HBox>
+
+    <VBox spacing="12" styleClass="card">
+        <padding>
+            <Insets top="20" right="24" bottom="20" left="24"/>
+        </padding>
+        <Label text="Détails du stationnement" styleClass="card-title"/>
+
+        <GridPane hgap="24" vgap="8">
+            <Label text="Immatriculation :" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Label fx:id="immatLabel" text="—" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Entrée :" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Label fx:id="entreeLabel" text="—" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label text="Durée :" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Label fx:id="dureeLabel" text="—" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label text="Montant dû :" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Label fx:id="montantLabel" text="—" styleClass="stat-value-large"
+                   GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        </GridPane>
+
+        <HBox spacing="12">
+            <Button fx:id="validerButton" text="Encaisser et libérer la place"
+                    styleClass="btn-primary" disable="true" onAction="#onValiderPaiement"/>
+        </HBox>
+    </VBox>
+</VBox>

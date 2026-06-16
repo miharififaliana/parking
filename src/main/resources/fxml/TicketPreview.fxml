@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.TicketPreviewController"
+      alignment="CENTER" spacing="12" prefWidth="360">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label fx:id="parkingNomLabel" styleClass="title"/>
+    <Label fx:id="adresseLabel" styleClass="subtitle"/>
+
+    <Separator/>
+
+    <GridPane hgap="12" vgap="6">
+        <Label text="Ticket N° :" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label fx:id="ticketLabel" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Place :" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Label fx:id="placeLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Immat. :" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Label fx:id="immatLabel" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Entrée :" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Label fx:id="dateLabel" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Heure :" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <Label fx:id="heureLabel" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    </GridPane>
+
+    <ImageView fx:id="qrImageView" fitWidth="160" fitHeight="160" preserveRatio="true"/>
+
+    <HBox spacing="12" alignment="CENTER">
+        <Button text="Imprimer" styleClass="btn-secondary" onAction="#onImprimer"/>
+        <Button text="Fermer" styleClass="btn-primary" onAction="#onFermer"/>
+    </HBox>
+</VBox>

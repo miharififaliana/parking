@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.parking.controller.DashboardController"
+      spacing="20">
+
+    <HBox alignment="CENTER_LEFT" spacing="16">
+        <Label text="Tableau de bord" styleClass="page-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Actualiser" styleClass="btn-secondary" onAction="#onRefreshManual"/>
+        <Label fx:id="lastRefreshLabel" styleClass="status-info"/>
+    </HBox>
+
+    <Label fx:id="errorLabel" styleClass="status-error" wrapText="true"/>
+
+    <!-- Occupation en temps réel (§4.5 CDC) -->
+    <VBox spacing="12" styleClass="card">
+        <padding>
+            <Insets top="16" right="20" bottom="16" left="20"/>
+        </padding>
+        <Label text="Occupation en temps réel" styleClass="card-title"/>
+
+        <HBox spacing="24" alignment="CENTER_LEFT">
+            <VBox spacing="4" styleClass="stat-box">
+                <Label text="Total places" styleClass="stat-label"/>
+                <Label fx:id="totalPlacesLabel" text="0" styleClass="stat-value"/>
+            </VBox>
+            <VBox spacing="4" styleClass="stat-box stat-libre">
+                <Label text="Libres" styleClass="stat-label"/>
+                <Label fx:id="libresLabel" text="0" styleClass="stat-value"/>
+            </VBox>
+            <VBox spacing="4" styleClass="stat-box stat-occupee">
+                <Label text="Occupées" styleClass="stat-label"/>
+                <Label fx:id="occupeesLabel" text="0" styleClass="stat-value"/>
+            </VBox>
+            <VBox spacing="4" styleClass="stat-box">
+                <Label text="Taux d'occupation" styleClass="stat-label"/>
+                <Label fx:id="tauxLabel" text="0 %" styleClass="stat-value"/>
+            </VBox>
+        </HBox>
+
+        <ProgressBar fx:id="occupationBar" prefWidth="Infinity" progress="0"/>
+    </VBox>
+
+    <!-- Recettes (§4.5 CDC) -->
+    <HBox spacing="16">
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets top="16" right="20" bottom="16" left="20"/>
+            </padding>
+            <Label text="Recettes aujourd'hui" styleClass="card-title"/>
+            <Label fx:id="recetteJourLabel" text="0,00 €" styleClass="stat-value-large"/>
+        </VBox>
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets top="16" right="20" bottom="16" left="20"/>
+            </padding>
+            <Label text="Cette semaine" styleClass="card-title"/>
+            <Label fx:id="recetteSemaineLabel" text="0,00 €" styleClass="stat-value-large"/>
+        </VBox>
+        <VBox spacing="8" styleClass="card" HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets top="16" right="20" bottom="16" left="20"/>
+            </padding>
+            <Label text="Ce mois" styleClass="card-title"/>
+            <Label fx:id="recetteMoisLabel" text="0,00 €" styleClass="stat-value-large"/>
+        </VBox>
+    </HBox>
+
+    <!-- Derniers mouvements (§4.5 CDC) -->
+    <VBox spacing="12" styleClass="card" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets top="16" right="20" bottom="16" left="20"/>
+        </padding>
+        <Label text="10 derniers mouvements" styleClass="card-title"/>
+        <TableView fx:id="mouvementsTable" VBox.vgrow="ALWAYS" prefHeight="280">
+            <columns>
+                <TableColumn fx:id="typeColumn" text="Type" prefWidth="80"/>
+                <TableColumn fx:id="ticketColumn" text="Ticket" prefWidth="140"/>
+                <TableColumn fx:id="placeColumn" text="Place" prefWidth="70"/>
+                <TableColumn fx:id="immatColumn" text="Immatriculation" prefWidth="120"/>
+                <TableColumn fx:id="dateColumn" text="Date / Heure" prefWidth="140"/>
+                <TableColumn fx:id="montantColumn" text="Montant" prefWidth="90"/>
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>
